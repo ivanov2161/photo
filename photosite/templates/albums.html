@@ -2,13 +2,10 @@
 
 {% block title %} Home {% endblock %}
 {% block content %}
-<div class="container">
-    <div class="row">
-        <div class="col">
-        </div>
-        <div class="col text-center">
+<!--<div class="container text-center">-->
+
             {% for item in albums %}
-                <div class="card mt-2" style="width: 40rem;">
+                <div class="card mt-2 w-50 translate-middle-x text-center" >
                     <img src="{{temp|get_item:item.title}}" class="card-img-top">
                     <div class="card-body">
                         <h5 class="card-title">{{item.title}}</h5>
@@ -17,9 +14,8 @@
                     </div>
                 </div>
             {% endfor %}
-        </div>
-        <div class="col">
-        </div>
-    </div>
-</div>
+
+<!--</div>-->
 {% endblock %}
+
+<!--style="width: 40rem;"-->

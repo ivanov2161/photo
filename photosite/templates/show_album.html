@@ -5,26 +5,8 @@
 <div class="mt-2 text-center">
   <h1>{{album.title}}</h1>
   <h2>{{album.content}}</h2>
-
-  <div class="container">
     {% for item in photos %}
-    <div class="row">
-      <div class="col">
-<!--        Column-->
-      </div>
-      <div class="col" >
-
-        <div class="media mt-2" >
-          <img src="{{item.photo.url}}" style="width: 70rem;">
-        </div>
-
-      </div>
-      <div class="col">
-<!--        Column-->
-      </div>
-    </div>
+          <img class="mt-1 mb-1 img-fluid w-75" src="{{item.photo.url}}">
     {% endfor %}
-  </div>
-
 </div>
 {% endblock %}
