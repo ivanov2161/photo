@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %} Home {% endblock %}
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col">
+        </div>
+        <div class="col text-center">
+            {% for item in albums %}
+                <div class="card mt-2" style="width: 40rem;">
+                    <img src="{{temp|get_item:item.title}}" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">{{item.title}}</h5>
+                        <p class="card-text">{{item.content}}</p>
+                        <a href="{{item.pk}}" class="btn btn-outline-dark">Go to album</a>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+        <div class="col">
+        </div>
+    </div>
+</div>
+{% endblock %}
