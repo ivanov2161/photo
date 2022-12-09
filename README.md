@@ -1,9 +1,22 @@
-## Проект: Сайт фотографа 
+## This is a site for photos
 
-Ссылка на сайт: https://phkatull.ru
+*Link http://phkatull.ru/*
 
-### Описание
-Сайт разработанн, для презентации личных работ фотографа.
-Админка позволяет добавлять новые альбомы и фотографии.
+Clone this repository
+```bash
+git clone https://github.com/ivanov2161/photo
+```
 
-*p.s. Разрабатывался в учебных целях.*
+Install Django
+```bash
+pip install django
+```
+Intall Pillow
+```bash
+pip install Pillow
+```
+
+Run the project
+```bash
+python manage.py runserver
+```
